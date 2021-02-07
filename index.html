@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Firs Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Payment form Example</h2>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    <strong>Some fields are missing</strong>
+                </div>
+                <form>
+                    <div class="row row-cols-3">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="inputCard">Card #</label>
+                                <input type="text" class="form-control" id="inputCard"
+                                    placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="inputCVC">CVC #</label>
+                                <input type="number" class="form-control" id="inputCVC" placeholder="0000">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="inputAmount">Total Amount</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">$</span>
+                                    </div>
+                                    <input type="number" class="form-control" placeholder="Amount" aria-label="Amount"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputName">First Name</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="inputLast">Last Name</label>
+                                <input type="text" class="form-control" id="inputLast">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="inputState">State</label>
+                                <input type="text" class="form-control" id="inputState">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="inputPostal">Postal Code</label>
+                                <input type="number" class="form-control" id="inputPostal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label> We accept </label> <br>
+                                <div class="bg-secondary rounded px-2 float-left text-white">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="MasterCard" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            <i class="fab fa-cc-mastercard align-middle"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                            value="Visa">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            <i class="fab fa-cc-visa align-middle"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                            value="DinersClub">
+                                        <label class="form-check-label" for="gridRadios3">
+                                            <i class="fab fa-cc-diners-club align-middle"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                            value="AmericanExpress">
+                                        <label class="form-check-label" for="gridRadios3">
+                                            <i class="fab fa-cc-amex align-middle"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="inputMessage">Messages or comments</label>
+                                <textarea class="form-control" id="inputMessage" rows="3"
+                                    aria-describedby="MessageHelp"></textarea>
+                                <small id="MessageHelp" class="form-text text-muted">Add any notes here.</small>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="float-right">
+                    <button type="reset" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
